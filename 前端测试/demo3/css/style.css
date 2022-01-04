@@ -1,0 +1,277 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1120px;
+}
+
+.header {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.header .header-banner {
+	/* 背景图片拉伸满 */
+	background: url(../img/图层%2044%20副本.png) no-repeat;
+	background-size: 100% 100%;
+	width: 1120px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.header-title {
+	margin: 0 auto;
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-title div {
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.header-title>div>span {
+	color: #cc3300;
+}
+
+.header-logo {
+	margin: 0 auto;
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-top: 25px;
+}
+
+.header-logo-panl {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 381px;
+}
+
+.header-logo-panl>.ip1 {
+	width: 220px;
+	height: 20px;
+	border: 1px solid #cc3300;
+}
+
+.header-logo-panl>select {
+	height: 22px;
+	width: 75px;
+	border: 1px solid #cc3300;
+	font-size: 10px;
+}
+
+.ip2 {
+	background-image: url(../img/1.png);
+	/*设置小图标*/
+	background-size: 13px 13px;
+	/*小图标的大小*/
+	background-position: 9px 4px;
+	/*小图标在input的位置*/
+	background-repeat: no-repeat;
+	/*背景小图标不重复*/
+	padding: 0px 0px 0px 25px;
+	/*设置input内边距*/
+	/*设置input样式好看*/
+	border: 1px solid #999;
+	/* margin: 30px; */
+	width: 43px;
+	height: 20px;
+}
+
+.header-nav {
+	width: 960px;
+	height: 45px;
+	background-color: #eb0900;
+	margin: auto;
+}
+
+li {
+	display: block;
+}
+
+.header-list {
+	display: flex;
+	justify-content: space-between;
+	width: 758px;
+	margin: 0 auto;
+}
+
+.header-list li {
+	line-height: 44px;
+	color: white;
+	font-weight: 900;
+	width: 61px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.header-list li:hover {
+	color: #999999;
+}
+
+.main {
+	width: 960px;
+	margin: auto;
+	margin-top: 16px;
+	display: flex;
+	/* flex-flow: column; */
+	justify-content: space-between;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	width: 350px;
+	height: 566px;
+}
+
+.main-nav-list {
+	width: 350px;
+	height: 254px;
+	border: 1px solid #dadada;
+}
+
+.main-nav-img {
+	background: url(../img/图层%2044%20副本.png) no-repeat;
+	background-size: 100% 100%;
+	width: 350px;
+	height: 26px;
+	margin-top: -1px;
+}
+
+.main-nav-list>div>span {
+	font-size: 10px;
+	margin-left: 10px;
+	color: #cc3300;
+	font-weight: bold;
+}
+
+ul {
+	list-style: outside none none;
+}
+
+.slider,
+.slider-panel img,
+.slider-extra {
+	width: 340px;
+	height: 221px;
+}
+
+.slider {
+	text-align: center;
+	margin:  auto;
+	position: relative;
+	margin-top: 3px;
+}
+
+.slider-panel,
+.slider-nav{
+	position: absolute;
+	z-index: 8;
+}
+
+.slider-panel {
+	position: absolute;
+}
+
+.slider-panel img {
+	border: none;
+}
+
+.slider-extra {
+	position: relative;
+}
+
+.slider-nav {
+	/* margin-left: -51px; */
+	position: absolute;
+	right: 2%;
+	bottom: 6px;
+}
+
+.slider-nav li {
+	background: #dadada;
+	/* border-radius: 50%; */
+	color: #cc3300;
+	cursor: pointer;
+	/* margin: 0 2px; */
+	overflow: hidden;
+	text-align: center;
+	/* display: inline-block; */
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	width: 12px;
+	font-size: 5px;
+	margin: 1px;
+}
+
+.slider-nav .slider-item-selected {
+	/* background: blue; */
+}
+
+.slider-page a {
+	background: rgba(0, 0, 0, 0.2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000);
+	color: #fff;
+	text-align: center;
+	display: block;
+	font-family: "simsun";
+	font-size: 22px;
+	width: 28px;
+	height: 62px;
+	line-height: 62px;
+	margin-top: -31px;
+	position: absolute;
+	top: 50%;
+}
+
+.main-nav-list:nth-child(2){
+	height: 230px;
+	
+}
+.main-nav-list:nth-child(3){
+	height: 62px;
+}
+.square{
+	list-style: square;
+	
+}
+.square li{
+	list-style: square;
+	display: list-item;
+	font-size: 12px;
+	color: #666;
+	margin: 8px 0px 5px 27px;
+	cursor: pointer;
+}
+.square li:hover{
+	border-bottom: 1px solid #666;
+}
+.xinwen{
+
+	font-size: 12px;
+	color: #666;
+	
+	cursor: pointer;
+}
+.xinwen li{
+	font-size: 12px;
+	color: #666;
+	margin: 8px 0px 5px 9px;
+	cursor: pointer;
+}
+.xinwen li:hover{
+	border-bottom: 1px solid #666;
+	
+}
