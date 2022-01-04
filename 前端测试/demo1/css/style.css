@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.con {
+	width: 1000px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.zhuce {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0;
+}
+
+.zhuce div {
+	padding: 0 5px;
+	color: #3369B1;
+}
+
+.log {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 50px;
+	margin-bottom: 6px;
+}
+
+.item {
+	color: #3B7195;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 160px;
+}
+
+.left {
+	width: 600px;
+}
+
+.itemWen {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5px;
+}
+
+.itemWen div {
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	padding-right: 8px;
+}
+
+.wen{
+	background: #EAEFF3;
+	color: #6990AC;
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	/*background: #0A4265;
+	color: white;*/
+}
+
+#sanJ{
+	width: 20px;
+	height: 15px;
+	position: relative;
+	bottom: -28.5px;
+}
+
+#chazhao {
+	width: 480px;
+	height: 35px;
+	padding-left: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.lunBo{
+	display: flex;
+	justify-content: space-between;
+	height: 204px;
+	min-width: 0;
+	width: 756px;
+	
+	overflow: hidden;
+	position: relative;
+}
+.lunBos{
+	display: flex;
+	justify-content: space-between;
+	height: 204px;
+}
+#box{
+	position: absolute;
+}
