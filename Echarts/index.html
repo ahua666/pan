@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据可视化面板-ECharts</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+    <!-- 头部盒子 -->
+    <header>
+      <h2>数据可视化面板-ECharts</h2>
+      <div class="showTime"></div>
+    </header>
+
+    <!-- 页面主体部分 -->
+    <section class="mainBox">
+      <!-- 左侧盒子 又分上、中、下三个模块 -->
+      <div class="column">
+        <!-- 柱状图模块1 -->
+        <div class="panel bar1">
+          <h2>贞观四年长安降水量和蒸发量</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!-- 饼图模块 -->
+        <div class="panel pie">
+          <h2>南丁格尔玫瑰图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!-- 散点图模块 -->
+        <div class="panel scatter-plot">
+          <h2>各国家人均寿命与GDP</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+
+      <!-- 中间盒子 又分上、下两个模块-->
+      <div class="column">
+        <!-- no 数字模块制作 -->
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>8454</li>
+              <li>970910</li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>ZXF Tail Phone Number</li>
+              <li>Whales In The Blue Sea</li>
+            </ul>
+          </div>
+          <!-- map 地图模块 包括chart:放图表模块,球体盒子:map1,旋转1:map2,旋转2:map3   -->
+          <div class="map">
+            <div class="map1"></div>
+            <div class="map2"></div>
+            <div class="map3"></div>
+            <div class="chart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右侧盒子 又分上、中、下三个模块 -->
+      <div class="column">
+        <!-- 折线图模块 -->
+        <div class="panel line">
+          <h2>日升汤谷扶桑图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!-- 柱形图模块2 -->
+        <div class="panel bar2">
+          <h2>前端技能掌握百分比</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <!-- 图画 -->
+        <!-- <div class="panel paint">
+          <h2>孤帆远影碧空尽,唯见长江天际流</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div> -->
+        <!-- 雷达图模块 -->
+        <div class="panel radar">
+          <h2>
+            <a href="javascript:;">词·上阕</a>
+            行香子&nbsp; · &nbsp;过七里濑
+            <a href="javascript:;">词·下阕</a>
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <!-- 先引入 jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- 
+      - 第一需要下载china.js提供中国地图的js文件
+      - 第二个因为里面代码比较多，我们新建一个新的js文件 myMap.js 引入
+      - 使用社区提供的配置即可。  
+    -->
+    <script src="js/China.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 地图模块新建一个 map.js文件，代码较多 -->
+    <script src="js/ChinaMap.js"></script>
+    <script>
+      // 头部右侧时间
+      // 格式：当前时间：2020年8月17-11时19分14秒
+      var t = null
+      t = setTimeout(time, 500) //開始运行
+      function time() {
+        clearTimeout(t) //清除定时器
+        dt = new Date()
+        var y = dt.getFullYear()
+        var mt = dt.getMonth() + 1
+        var day = dt.getDate()
+        var h = dt.getHours() //获取时
+        var m = dt.getMinutes() //获取分
+        var s = dt.getSeconds() //获取秒
+        document.querySelector('.showTime').innerHTML =
+          '当前时间：' +
+          y +
+          '年' +
+          mt +
+          '月' +
+          day +
+          '日-' +
+          h +
+          '时' +
+          m +
+          '分' +
+          s +
+          '秒'
+        t = setTimeout(time, 500) //设定定时器，循环运行
+      }
+    </script>
+  
+
+</body></html>
