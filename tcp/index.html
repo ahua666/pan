@@ -1,0 +1,132 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+    <link href="signin.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <style type="text/css"> 
+	span.input-group-addon
+	{
+    	padding:6px;
+	}
+</style> 
+	<title>Socket Platform</title>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="padding: 5px;">
+			<div class="page-header">
+				<h1>TCP/UDP 调试平台</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="padding: 0px;">
+			<div class="row clearfix">
+				<div class="col-md-4 column" style="padding: 5px;">
+					<div class="col-md-12">
+						<div class="col-md-12 column panel panel-info">
+	    					<div class="panel-heading">
+	        				<h3 class="panel-title">服务器信息</h3>
+	    					</div>
+	    					<div class="panel-body">
+	    						<p class="p-info" id="welcome_msg"></p><a href="exit.php">退出登录</a>
+		        				<p class="p-info" id="tcp_server_info"></p>
+		        				<p class="p-info" id="udp_server_info"></p>
+	    					</div>
+						</div>
+
+						<div class="col-md-12 column panel panel-info">
+    						<div class="panel-heading">
+        					<h3 class="panel-title">TCP客户端</h3>
+    						</div>
+	    					<div class="panel-body" id="tcp_client_panel">
+	    						<p id="tcpDefaultMsg">当前没有在线客户端</p>
+	    						<!-- 待添加客户端条目 -->
+	    					</div>
+						</div>
+
+						<div class="col-md-12 column panel panel-info">
+	    					<div class="panel-heading" style=" display:flex;justify-content: space-between;align-items: center;">
+	        				<h3 class="panel-title">UDP客户端</h3>
+	        				<button class="btn btn-danger" id="removeAllUDPClient">清空所有</button>
+	    					</div>
+	    					<div class="panel-body" id="udp_client_panel">
+	    						<p id="udpDefaultMsg">当前没有在线客户端</p>
+	    						<!-- 待添加客户条目 -->
+	    					</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 column tab-content" style="padding: 0px;" id="clientTabPage">
+					<!-- <div class="tab-pane fade in active" id="tab-default">
+						<div class="col-md-12 column">
+							<div class="col-md-12 tab-element">
+							<textarea class="box-recv" readonly></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 column">
+							<div class="col-md-6 column tab-element">
+								<div class="col-md-12 column input-group">
+		            				<span class="input-group-addon">Total Recv:</span>
+		            				<input type="text" class="form-control" readonly="readonly">
+		            				<span class="input-group-addon">Bytes</span>
+	            				</div>
+	        				</div>
+	        				<div class="col-md-6 column tab-element">
+								<div class="col-md-12 column input-group">
+		            				<span class="input-group-addon">Total Send:</span>
+		            				<input type="text" class="form-control" readonly="readonly">
+		            				<span class="input-group-addon">Bytes</span>
+	            				</div>
+	        				</div>
+						</div>
+						<div class="col-md-12 column">
+							<div class="col-md-12 tab-element">
+								<textarea class="box-send tab-element"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 column">
+							<div class="col-md-2 column tab-element">
+								<button type="button" class="btn btn-primary btn-block">发送</button>
+							</div>
+							<div class="col-md-4 column tab-element">
+								<div class="col-md-12 column input-group">
+									<span class="input-group-addon"><input type="checkbox"></span>
+		            				<span class="input-group-addon">定时发送</span>
+		            				<input type="text" class="form-control">
+		            				<span class="input-group-addon">ms</span>
+	            				</div>
+							</div>
+							<div class="col-md-2 column tab-element">
+								<button type="button" class="btn btn-primary btn-block">清空接收</button>
+							</div>
+							<div class="col-md-2 column tab-element">
+								<button type="button" class="btn btn-primary btn-block">清空发送</button>
+							</div>
+							<div class="col-md-2 column tab-element">
+								<button type="button" class="btn btn-primary btn-block">清空计数</button>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="client_ui.js"></script>
+<script type="text/javascript" src="websocket.js"></script>
+	<script type="text/javascript">
+	var element = document.getElementById("removeAllUDPClient").onclick = removeAllClientByClick;
+	var username = "zhangwencheng";var user_port = 2025;document.getElementById("welcome_msg").innerHTML = "Welcome: zhangwencheng";document.getElementById("tcp_server_info").innerHTML = "TCP Server-> 120.27.12.119(6gforce.com):2025";document.getElementById("udp_server_info").innerHTML = "UDP Server-> 120.27.12.119(6gforce.com):2025";</script>
+</body>
+</html>

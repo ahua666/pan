@@ -1,0 +1,103 @@
+.body-login {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 20px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="username"] {
+  margin-bottom: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.box-send {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /*resize: none;*/
+  font-size: 8px;
+}
+
+.box-recv {
+  width: 100%;
+  min-height: 250px;
+  /*resize: none;*/
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.panel {
+  padding: 0px;
+}
+
+.panel-body {
+  padding: 5px;
+}
+
+.panel-heading {
+  padding: 5px;
+}
+
+.panel-body-button {
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+.p-info {
+  margin: 2px;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+.btn-protocol {
+  width: 15%;
+}
+
+.btn-host {
+  width: 70%;
+}
+
+.btn-disconnect {
+  width: 15%;
+}
+
+.tab-element {
+  margin: 0px;
+  padding: 5px;
+}
+
+.hex-tip {
+  height: 34px;
+}
